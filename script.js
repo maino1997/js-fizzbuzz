@@ -7,21 +7,23 @@
 
 // Dichiaro variabile number 
 let number = '';
+const displayElement = document.getElementById('display');
 
 
 // ciclo da 1 a 100 
 for (let i=1; i<=100; i++){
     if (( i % 3 ) == 0 && ( i % 5 ) == 0){
-        number += ' FizzBuzz';
+        number = number `<li> FizzBuzz </li>`;
     } else if(( i % 3 ) == 0){
-        number += ' fizz';
+        number = number`<li>  fizz </li>`;    
     } else if (( i % 5 ) == 0){
-        number += ' buzz';
-    } else{
-        number += ` ${i}`;
+        number = number `<li>  buzz </li>`;
+        } else{
+        number = number`<li> ${i}</li>`;
     }
 }
 
 // stampo risultato console 
 console.log(number);
 
+displayElement.innerHTML = number;
