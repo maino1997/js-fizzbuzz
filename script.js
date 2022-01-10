@@ -17,7 +17,7 @@ for (let i=1; i<=100; i++){
         } else if(( i % 3 ) == 0){
         number = number + "<li> fizz </li>"
         } else if (( i % 5 ) == 0){
-        number = number + "<li> FizzBuzz </li>"
+        number = number + "<li> Buzz </li>"
         } else{
         number =number + `<li>${i}</li>`;
     }
